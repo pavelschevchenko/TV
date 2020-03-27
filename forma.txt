@@ -1,0 +1,376 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TV_2._0
+{
+   
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            textBox1.Visible = false;
+            label1.BackColor = System.Drawing.Color.Transparent;
+            
+        }
+        int c = 1;
+        string s = " ";
+        int gr =15;
+        int per = 0;
+        int volume = 15;
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '1';
+            label1.Text = s;
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '2';
+            label1.Text = s;
+            
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '3';
+            label1.Text = s;
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '4';
+            label1.Text = s;
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '5';
+            label1.Text = s;
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '6';
+            label1.Text = s;
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '7';
+            label1.Text = s;
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '8';
+            label1.Text = s;
+        }
+
+        private void Button15_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '9';
+            label1.Text = s;
+        }
+        private void Button16_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            if (s.Length > 2)
+                s = s;
+            else
+                s = s + '0';
+            label1.Text = s;
+        }
+        public void Canal(int c)
+        {
+            if (c == 1)
+                pictureBox2.Image = Properties.Resources.imgonline_com_ua_Resize_CH6TIf9CpHEX4V;
+            if (c == 2)
+                pictureBox2.Image = Properties.Resources._10;
+            if (c == 3)
+                pictureBox2.Image = Properties.Resources._13;
+            if (c == 4)
+                pictureBox2.Image = Properties.Resources._14;
+            if (c == 5)
+                pictureBox2.Image = Properties.Resources._15;
+            if (c == 6)
+                pictureBox2.Image = Properties.Resources._16;
+            if (c == 7)
+                pictureBox2.Image = Properties.Resources._17;
+            if (c == 8)
+                pictureBox2.Image = Properties.Resources._18;
+            if (c == 9)
+                pictureBox2.Image = Properties.Resources._19;
+            if (c == 10)
+                pictureBox2.Image = Properties.Resources._3;
+            if (c == 11)
+                pictureBox2.Image = Properties.Resources._4;
+            if (c == 12)
+                pictureBox2.Image = Properties.Resources._6;
+            if (c == 13)
+                pictureBox2.Image = Properties.Resources._7;
+            if (c == 14)
+                pictureBox2.Image = Properties.Resources._8;
+            if (c == 15)
+                pictureBox2.Image = Properties.Resources._9;
+            if(c==16)
+                pictureBox2.Image = Properties.Resources._7;
+            if (c == 17)
+                pictureBox2.Image = Properties.Resources._19;
+            if (c == 18)
+                pictureBox2.Image = Properties.Resources._3;
+            if (c == 19)
+                pictureBox2.Image = Properties.Resources._15;
+            if (c == 20)
+                pictureBox2.Image = Properties.Resources._16;
+            if (c == 0)
+                pictureBox2.Image = Properties.Resources._3;
+                
+            
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if(per==0)
+            {
+                pictureBox3.Visible = false;
+                button3.Enabled = true;
+                button4.Enabled = true;
+                button5.Enabled = true;
+                button6.Enabled = true;
+                button7.Enabled = true;
+                button8.Enabled = true;
+                button9.Enabled = true;
+                button10.Enabled = true;
+                button11.Enabled = true;
+                button12.Enabled = true;
+                button13.Enabled = true;
+                button14.Enabled = true;
+                button15.Enabled = true;
+                button16.Enabled = true;
+                button17.Enabled = true;
+                button20.Enabled = true;
+                button21.Enabled = true;
+                pictureBox2.Image = Properties.Resources.imgonline_com_ua_Resize_CH6TIf9CpHEX4V;
+                timer1.Enabled = true;
+                per++;
+                canal = 1;
+            }
+            else
+            {
+
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
+                button10.Enabled = false;
+                button11.Enabled = false;
+                button12.Enabled = false;
+                button13.Enabled = false;
+                button14.Enabled = false;
+                button15.Enabled = false;
+                button16.Enabled = false;
+                button17.Enabled = false;
+                button20.Enabled = false;
+                button21.Enabled = false;
+                pictureBox2.BackColor = Color.Black;
+                pictureBox3.Visible = true;
+                per = 0;
+            }
+          
+        }
+
+     
+
+        private void Button16_Click_1(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            s = s + '0';
+            label1.Text = s;
+        }
+        int canal;
+        private void Button17_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                canal = Convert.ToInt32(label1.Text);
+
+
+                if (canal < 20)
+                {
+                    Canal(canal);
+
+                }
+                else
+                {
+                    canal = 0;
+                    Canal(canal);
+                }
+            }
+            catch
+            {
+                Canal(canal);
+            }
+           
+
+               
+            label1.Visible = false;
+            s = " ";
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            label2.Text = Convert.ToString(gr);
+            
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            canal++;
+            Canal(canal);
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            canal--;
+            Canal(canal);
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            if (per == 0)
+            {
+                pictureBox3.Visible = false;
+                button3.Enabled = true;
+                button4.Enabled = true;
+                button5.Enabled = true;
+                button6.Enabled = true;
+                button7.Enabled = true;
+                button8.Enabled = true;
+                button9.Enabled = true;
+                button10.Enabled = true;
+                button11.Enabled = true;
+                button12.Enabled = true;
+                button13.Enabled = true;
+                button14.Enabled = true;
+                button15.Enabled = true;
+                button16.Enabled = true;
+                button17.Enabled = true;
+                button20.Enabled = true;
+                button21.Enabled = true;
+                pictureBox2.Image = Properties.Resources.imgonline_com_ua_Resize_CH6TIf9CpHEX4V;
+                timer1.Enabled = true;
+                per++;
+                canal = 1;
+            }
+            else
+            {
+
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
+                button10.Enabled = false;
+                button11.Enabled = false;
+                button12.Enabled = false;
+                button13.Enabled = false;
+                button14.Enabled = false;
+                button15.Enabled = false;
+                button16.Enabled = false;
+                button17.Enabled = false;
+                button20.Enabled = false;
+                button21.Enabled = false;
+                pictureBox3.Visible = true;
+                per = 0;
+            }
+          
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button20_Click(object sender, EventArgs e)
+        {
+            canal++;
+            Canal(canal);
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            canal--;
+            Canal(canal);
+        }
+
+        private void Timer2_Tick(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
+            timer2.Stop();
+        }
+
+        private void Button14_Click(object sender, EventArgs e)
+        {
+            volume++;
+            textBox1.Text = "Громкость: " + volume;
+            textBox1.Visible = true;
+            timer2.Interval = 5000;
+            timer2.Start();
+        }
+    }
+}
